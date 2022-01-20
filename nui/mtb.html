@@ -1,0 +1,116 @@
+<!-- MTB -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HUD</title>
+    <link rel="stylesheet" type="text/css" href="mtb.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="movie-top"></div>
+        <div class="movie-bottom"></div>
+        <div class="container">
+        <div class="logo"><img width="200px" src="images/logo.png"></div>
+        <div class="hour"></div>
+        <div class="hour-name">
+            <div class="street-name"><b style="margin-left: 15px; margin-right: 5px"></b><img style="margin-bottom: -2px; margin-right: 10px" width="15px" src="images/loc.png"></div>
+         </div>
+        <div class="particulars">
+
+            <div style="display: flex">
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="color-vida" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop id="colete" offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.425);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#color-vida)" d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="display: flex">
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="color-colete" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop id="colete" offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.425);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#color-colete)" d="M12 0c-2.995 2.995-7.486 4-11 4 0 8.583 5.068 16.097 11 20 5.932-3.903 11-11.417 11-20-3.514 0-8.005-1.005-11-4z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="display: flex">
+                <div class="item">
+                    <svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="color-fome" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop id="fome" offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.425);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#color-fome)" d="M1.005 10.755c.039-5.636 5.304-8.755 11.098-8.755 5.572 0 10.925 3.019 10.892 8.755.592.527.96 1.277 1.001 2.088.041.802-.24 1.567-.761 2.151.45.504.726 1.154.761 1.849.048.931-.338 1.812-1.031 2.418.276 2.333-.924 3.656-2.871 3.725-.6.009-14.933.021-16.188.009-2.168-.068-3.111-1.549-2.88-3.743-.69-.606-1.07-1.485-1.022-2.409.035-.695.311-1.346.762-1.849-.524-.585-.804-1.351-.762-2.151.041-.811.409-1.561 1.001-2.088zm1.989 9.241h-.002c.031.791.267.979.954.999 1.241.013 15.514 0 16.098-.009.679-.022.92-.269.96-.943 0 0-11.384.036-18.01-.047zm9.452-3.996c-.522.003-.988.277-1.296.459-.89.522-1.587 1.049-2.652 1.038-1.184-.012-1.822-.551-2.57-1.023-.289-.182-.63-.477-1.143-.474h-1.861c-.54.046-.899.472-.923.943-.026.523.354 1.033 1.005 1.053h18.008c.645-.034 1.01-.539.985-1.053-.026-.476-.39-.899-.925-.944-.024.001-7.017-.01-8.628.001zm-.661-3.996l-8.779-.008c-.585.008-.98.453-1.005.947-.026.523.354 1.033 1.005 1.053 0 0 1.028-.002 1.994.004 1.443.009 2.422 1.672 3.508 1.666.968-.005 2.284-1.663 3.715-1.666 1.471-.003 8.791-.004 8.791-.004.645-.034 1.01-.539.985-1.053-.027-.49-.412-.946-.973-.947l-1.58.008c-.522.003-.988.277-1.296.459-.89.522-1.587 1.049-2.652 1.038-1.184-.012-1.822-.551-2.57-1.023-.289-.182-.63-.477-1.143-.474zm-2.285-5.007c.276 0 .5.224.5.5 0 .275-.224.5-.5.5s-.5-.225-.5-.5c0-.276.224-.5.5-.5zm5 0c.276 0 .5.224.5.5 0 .275-.224.5-.5.5-.277 0-.5-.225-.5-.5 0-.276.223-.5.5-.5zm4 0c.276 0 .5.224.5.5 0 .275-.224.5-.5.5-.277 0-.5-.225-.5-.5 0-.276.223-.5.5-.5zm-12 0c.276 0 .5.224.5.5 0 .275-.224.5-.5.5s-.5-.225-.5-.5c0-.276.224-.5.5-.5zm5-1c.276 0 .5.224.5.5 0 .275-.224.5-.5.5s-.5-.225-.5-.5c0-.276.224-.5.5-.5zm5 0c.276 0 .5.224.5.5 0 .275-.224.5-.5.5-.277 0-.5-.225-.5-.5 0-.276.223-.5.5-.5zm-8-1c.276 0 .5.224.5.5 0 .275-.224.5-.5.5s-.5-.225-.5-.5c0-.276.224-.5.5-.5zm5 0c.276 0 .5.224.5.5 0 .275-.224.5-.5.5-.277 0-.5-.225-.5-.5 0-.276.223-.5.5-.5zm7.5 5c-.872-4.683-5.35-6.013-9-5.997-3.926.017-8.258 1.748-9 6 0 0 8.701.002 9 .004 1.443.009 2.422 1.672 3.508 1.666.968-.005 2.284-1.664 3.715-1.666l1.777-.007z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="display: flex">
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="color-sede" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop id="colete" offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.425);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#color-sede)" d="M12 0c-4.87 7.197-8 11.699-8 16.075 0 4.378 3.579 7.925 8 7.925s8-3.547 8-7.925c0-4.376-3.13-8.878-8-16.075z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="display: flex">
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="color-tokovoip" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop id="colete" offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.425);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#color-tokovoip)" d="M16 11c0 2.209-1.791 4-4 4s-4-1.791-4-4v-7c0-2.209 1.791-4 4-4s4 1.791 4 4v7zm4-2v2c0 4.418-3.582 8-8 8s-8-3.582-8-8v-2h2v2c0 3.309 2.691 6 6 6s6-2.691 6-6v-2h2zm-7 13v-2h-2v2h-4v2h10v-2h-4z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <div  class="in-car">
+            <div class="velocity"><b style="font-size: 32px; margin-right: 5px;"></b>KM/H</div>
+            <div class="separation"></div>
+            <div class="car-particulars">
+                <div class="headlight"></div>
+                <div class="arrow"></div>
+                <div class="belt"><img width="25px" src="images/sem_cinto.png"></div>
+                <div class="doors"></div>
+            </div>
+            <div class="gasoline">
+                <div class="bar-gasoline"></div>
+            </div>
+        </div>
+    </div>
+    <script src="mtb.js" type="text/javascript"></script>
+</body>
+</html>
+<!-- MTB -->

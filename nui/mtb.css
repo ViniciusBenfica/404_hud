@@ -1,0 +1,185 @@
+body{
+    user-select: none;
+    font-family: "Montserrat";
+    color: #fff;
+    overflow: hidden;
+}
+
+:root{
+    --color: rgba(0, 0, 0, 0.685);
+  }
+
+.container{
+    display: none;
+}
+
+.logo{
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.particulars{
+    position: absolute;
+    right: 5px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hour-name{
+    display: flex; 
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    margin-top: 40px; 
+    width: auto;
+}
+
+.hour{
+    width: 80px; height: 35px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: var(--color);
+    border: solid 2px #fff;
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 2.3;
+    position: absolute;
+    right: 5px;
+    margin-top: 40px;
+    font-family: 'Fira Code', monospace;
+}
+
+.hour b{
+    margin-left: 5px;
+}
+
+.car-particulars img{
+    opacity: 0;
+    animation: images-car 1s both;
+}
+
+@keyframes images-car {
+    from{}
+
+    to{
+        opacity: 1;
+    }
+}
+
+.in-car{
+    display: flex;
+    width: 290px; height: 0px;
+    font-size: 13px;
+    position: absolute;
+    justify-content: space-between;
+    right: 23px;
+    bottom: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: var(--color);
+    overflow: hidden;
+}
+
+.div-image{
+    height: 100%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; height: 60px;
+    background-color: var(--color);
+    border: solid 2px #fff;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.item svg{
+    margin-left: 6px;
+}
+
+.movie-top{
+    position: absolute;
+    left: 0; top: 0;
+    height: 0%;
+    width: 100%;
+    background-color: black;
+}
+  
+.movie-bottom{
+    position: absolute;
+    left: 0; bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: black;
+}
+
+.velocity{
+    font-family: 'Fira Code', monospace;
+    margin-left: 15px;
+    line-height: 1.7;
+    width: 100px;
+    text-align: center;
+}
+
+.street-name{
+    display: none;
+    right: 0;
+    width: auto; height: 35px;
+    border: solid 2px #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: var(--color);
+    line-height: 2.1;
+    text-align: end;
+    overflow: hidden;
+}
+
+.separation{
+    width: 2px; height: 60%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.car-particulars{
+    display: flex;
+    width: 50%; height: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gasoline{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 5px; height: 46px;
+    border: solid 2px #fff;
+    border-right: 0px;
+    background-color: var(--color);
+}
+
+.bar-gasoline{
+    width: 100%; height: 0;
+    background-color: rgb(21, 255, 0);
+}
+
+@media (max-width: 1400px) {
+    .container {
+        zoom: 0.7;
+    }
+}
