@@ -3,7 +3,6 @@ local Proxy = module("vrp","lib/Proxy")
 local Tools = module("vrp","lib/Tools")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
-local Mtb_Config = module("mtb_hud","mtb_config")
 
 mtbC = Tunnel.getInterface("mtb_hud")
 mtb = {}
